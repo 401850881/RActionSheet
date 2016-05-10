@@ -69,6 +69,7 @@
         tabHeight += 40;
     }
     if (tabHeight > [[UIScreen mainScreen] bounds].size.height * 0.61 - 65) {
+        tabHeight = [[UIScreen mainScreen] bounds].size.height * 0.61 - 65;
         _tableView.scrollEnabled = YES;
     }else{
         _tableView.scrollEnabled = NO;
@@ -136,7 +137,9 @@
 
 #pragma mark - 初始化
 + (RActionSheet *)sheet{
-    UIStoryboard * sb = [UIStoryboard storyboardWithName:@"ActionSheet" bundle:nil];
+    NSString *bundlePath = [[NSBundle mainBundle].resourcePath stringByAppendingPathComponent:@"Resource.bundle"];
+    NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
+    UIStoryboard * sb = [UIStoryboard storyboardWithName:@"ActionSheet" bundle:bundle];
     RActionSheet * sheetVC = [sb instantiateViewControllerWithIdentifier:@"sheet"];
     return sheetVC;
 }

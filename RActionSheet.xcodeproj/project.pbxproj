@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		704B64B01CD9DFC3001442A3 /* Resource.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 704B64AF1CD9DFC3001442A3 /* Resource.bundle */; };
 		70ED25EA1CAA5C710096FB9D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 70ED25E91CAA5C710096FB9D /* main.m */; };
 		70ED25ED1CAA5C710096FB9D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 70ED25EC1CAA5C710096FB9D /* AppDelegate.m */; };
 		70ED25F01CAA5C710096FB9D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 70ED25EF1CAA5C710096FB9D /* ViewController.m */; };
@@ -16,7 +17,6 @@
 		70ED26031CAA5C710096FB9D /* RActionSheetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 70ED26021CAA5C710096FB9D /* RActionSheetTests.m */; };
 		70ED260E1CAA5C710096FB9D /* RActionSheetUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 70ED260D1CAA5C710096FB9D /* RActionSheetUITests.m */; };
 		70ED261E1CAA75540096FB9D /* RActionSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 70ED261C1CAA75540096FB9D /* RActionSheet.m */; };
-		70ED26211CAA762B0096FB9D /* ActionSheet.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70ED26201CAA762B0096FB9D /* ActionSheet.storyboard */; };
 		70ED26241CAA84D50096FB9D /* ActionSheetCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 70ED26231CAA84D50096FB9D /* ActionSheetCell.m */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		704B64AF1CD9DFC3001442A3 /* Resource.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Resource.bundle; sourceTree = "<group>"; };
 		70ED25E51CAA5C710096FB9D /* RActionSheet.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RActionSheet.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70ED25E91CAA5C710096FB9D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		70ED25EB1CAA5C710096FB9D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -56,7 +57,6 @@
 		70ED260F1CAA5C710096FB9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		70ED261B1CAA75540096FB9D /* RActionSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RActionSheet.h; sourceTree = "<group>"; };
 		70ED261C1CAA75540096FB9D /* RActionSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RActionSheet.m; sourceTree = "<group>"; };
-		70ED26201CAA762B0096FB9D /* ActionSheet.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ActionSheet.storyboard; sourceTree = "<group>"; };
 		70ED26221CAA84D50096FB9D /* ActionSheetCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActionSheetCell.h; sourceTree = "<group>"; };
 		70ED26231CAA84D50096FB9D /* ActionSheetCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActionSheetCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,7 +117,7 @@
 				70ED261C1CAA75540096FB9D /* RActionSheet.m */,
 				70ED26221CAA84D50096FB9D /* ActionSheetCell.h */,
 				70ED26231CAA84D50096FB9D /* ActionSheetCell.m */,
-				70ED26201CAA762B0096FB9D /* ActionSheet.storyboard */,
+				704B64AF1CD9DFC3001442A3 /* Resource.bundle */,
 				70ED25F11CAA5C710096FB9D /* Main.storyboard */,
 				70ED25F41CAA5C710096FB9D /* Assets.xcassets */,
 				70ED25F61CAA5C710096FB9D /* LaunchScreen.storyboard */,
@@ -256,10 +256,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70ED26211CAA762B0096FB9D /* ActionSheet.storyboard in Resources */,
 				70ED25F81CAA5C710096FB9D /* LaunchScreen.storyboard in Resources */,
 				70ED25F51CAA5C710096FB9D /* Assets.xcassets in Resources */,
 				70ED25F31CAA5C710096FB9D /* Main.storyboard in Resources */,
+				704B64B01CD9DFC3001442A3 /* Resource.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -379,7 +379,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -417,7 +417,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -514,6 +514,7 @@
 				70ED26141CAA5C710096FB9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		70ED26151CAA5C710096FB9D /* Build configuration list for PBXNativeTarget "RActionSheetTests" */ = {
 			isa = XCConfigurationList;
@@ -522,6 +523,7 @@
 				70ED26171CAA5C710096FB9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		70ED26181CAA5C710096FB9D /* Build configuration list for PBXNativeTarget "RActionSheetUITests" */ = {
 			isa = XCConfigurationList;
@@ -530,6 +532,7 @@
 				70ED261A1CAA5C710096FB9D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

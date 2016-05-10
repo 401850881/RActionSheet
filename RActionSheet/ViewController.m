@@ -27,7 +27,7 @@
 - (IBAction)changeVC:(id)sender {
     
     RActionSheet * sheet = [RActionSheet sheet];
-    sheet.titlesArray = @[@"one", @"two", @"three", @"four"];
+    sheet.titlesArray = @[@"one", @"two"];
     sheet.sheetTitle(@"标题").sheetTitleColor(0x666666);
     sheet.cellTextFont(18).cellTextColor(0x666666).cancelButtonTextColor(0x666666);
     [sheet didsSelectedBlock:^(NSInteger row) {
